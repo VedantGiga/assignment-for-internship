@@ -100,6 +100,11 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
               <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Est. Value
               </TableHead>
+              <TableHead className="w-8 h-10">
+                <Button variant="ghost" size="icon" className="h-6 w-6">
+                  <Plus className="h-4 w-4 text-gray-400" />
+                </Button>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
