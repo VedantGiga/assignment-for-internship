@@ -99,7 +99,7 @@ export function Toolbar({
         </Button>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
         <Button variant="ghost" size="sm" onClick={onImport} className="gap-1">
           <Upload className="h-4 w-4" />
           Import
