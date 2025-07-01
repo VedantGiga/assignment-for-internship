@@ -53,57 +53,58 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
       <div className="min-w-[1200px]">
         <Table className="spreadsheet-table">
           <TableHeader>
-            <TableRow className="hover:bg-transparent border-b border-gray-200 bg-gray-50">
-              <TableHead className="w-12 h-10">
+            <TableRow className="hover:bg-transparent border-b border-gray-200 bg-gray-50 h-9">
+              <TableHead className="w-10 h-9 px-2 py-1">
                 <Checkbox
                   checked={data.length > 0 && selectedRows.size === data.length}
                   onCheckedChange={handleSelectAll}
                   aria-label="Select all"
+                  className="h-4 w-4"
                 />
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
-                <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-center font-medium">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
+                <div className="bg-green-100 text-green-800 px-2 py-0.5 rounded text-center font-medium text-xs">
                   ABC
                 </div>
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
-                <div className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-center font-medium">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
+                <div className="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-center font-medium text-xs">
                   Answer a question
                 </div>
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
-                <div className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-center font-medium">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
+                <div className="bg-orange-100 text-orange-800 px-2 py-0.5 rounded text-center font-medium text-xs">
                   Extract
                 </div>
               </TableHead>
-              <TableHead className="w-8"></TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="w-6 h-9 px-1"></TableHead>
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Submitted
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Status
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Submitter
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 URL
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Assigned
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Priority
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Due Date
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+              <TableHead className="text-xs font-medium text-gray-600 h-9 px-2 py-1">
                 Est. Value
               </TableHead>
-              <TableHead className="w-8 h-10">
-                <Button variant="ghost" size="icon" className="h-6 w-6">
-                  <Plus className="h-4 w-4 text-gray-400" />
+              <TableHead className="w-6 h-9 px-1 py-1">
+                <Button variant="ghost" size="icon" className="h-5 w-5">
+                  <Plus className="h-3 w-3 text-gray-400" />
                 </Button>
               </TableHead>
             </TableRow>
