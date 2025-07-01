@@ -166,28 +166,28 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
             ))}
 
             {/* Empty rows for spreadsheet feel */}
-            {Array.from({ length: 15 }, (_, i) => (
+            {Array.from({ length: 20 }, (_, i) => (
               <TableRow
                 key={`empty-${i}`}
-                className="hover:bg-gray-50 border-b"
+                className="hover:bg-gray-50 border-b border-gray-100 h-12"
               >
-                <TableCell></TableCell>
-                <TableCell className="text-center">
-                  <div className="w-8 h-8 bg-gray-50 rounded flex items-center justify-center text-xs text-gray-400">
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="text-center px-3">
+                  <div className="w-6 h-6 bg-gray-50 rounded text-xs text-gray-400 flex items-center justify-center">
                     {data.length + i + 1}
                   </div>
                 </TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-1"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
               </TableRow>
             ))}
           </TableBody>
