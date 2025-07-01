@@ -4,10 +4,12 @@ export type StatusType =
   | "blocked"
   | "need-to-start";
 export type PriorityType = "high" | "medium" | "low";
+export type RowType = "financial-overview" | "job-request";
 
 export interface SpreadsheetRow {
   id: string;
   selected: boolean;
+  rowType: RowType;
   description: string;
   submitted: string;
   status: StatusType;
