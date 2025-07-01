@@ -10,6 +10,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { StatusBadge } from "@/components/ui/status-badge";
 import { PriorityBadge } from "@/components/ui/priority-badge";
+import { RowTypeBadge } from "@/components/ui/row-type-badge";
 import { Button } from "@/components/ui/button";
 import { MoreHorizontal, ExternalLink, Plus } from "lucide-react";
 import type { SpreadsheetRow } from "@/lib/spreadsheet-data";
