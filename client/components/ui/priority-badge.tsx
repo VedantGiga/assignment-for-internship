@@ -10,15 +10,15 @@ interface PriorityBadgeProps {
 const priorityConfig = {
   high: {
     label: "High",
-    className: "bg-priority-high text-priority-high-foreground",
+    className: "bg-red-100 text-red-800 border border-red-200",
   },
   medium: {
     label: "Medium",
-    className: "bg-priority-medium text-priority-medium-foreground",
+    className: "bg-yellow-100 text-yellow-800 border border-yellow-200",
   },
   low: {
     label: "Low",
-    className: "bg-priority-low text-priority-low-foreground",
+    className: "bg-green-100 text-green-800 border border-green-200",
   },
 };
 
