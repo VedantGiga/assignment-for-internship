@@ -106,9 +106,9 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
             {data.map((row) => (
               <TableRow
                 key={row.id}
-                className="hover:bg-gray-50 border-b group"
+                className="hover:bg-gray-50 border-b border-gray-100 h-12"
               >
-                <TableCell>
+                <TableCell className="px-3">
                   <Checkbox
                     checked={selectedRows.has(row.id)}
                     onCheckedChange={(checked) =>
@@ -117,49 +117,49 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
                     aria-label={`Select row ${row.id}`}
                   />
                 </TableCell>
-                <TableCell className="text-center">
-                  <div className="w-8 h-8 bg-gray-100 rounded flex items-center justify-center text-xs font-medium">
+                <TableCell className="text-center px-3">
+                  <div className="w-6 h-6 bg-gray-100 rounded text-xs font-medium flex items-center justify-center text-gray-700">
                     {row.id}
                   </div>
                 </TableCell>
-                <TableCell className="font-medium text-sm">
-                  {row.description}
+                <TableCell className="font-medium text-sm text-gray-900 px-3 max-w-[300px]">
+                  <div className="truncate">{row.description}</div>
                 </TableCell>
-                <TableCell>
-                  <div className="w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
-                    <MoreHorizontal className="h-4 w-4 text-gray-500" />
+                <TableCell className="px-3">
+                  <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center">
+                    <MoreHorizontal className="h-3 w-3 text-gray-500" />
                   </div>
                 </TableCell>
-                <TableCell>
+                <TableCell className="px-1">
                   <Button variant="ghost" size="icon" className="h-6 w-6">
-                    <MoreHorizontal className="h-4 w-4" />
+                    <MoreHorizontal className="h-3 w-3" />
                   </Button>
                 </TableCell>
-                <TableCell className="text-sm text-gray-600">
+                <TableCell className="text-sm text-gray-700 px-3">
                   {row.submitted}
                 </TableCell>
-                <TableCell>
+                <TableCell className="px-3">
                   <StatusBadge status={row.status} />
                 </TableCell>
-                <TableCell className="text-sm text-gray-600">
+                <TableCell className="text-sm text-gray-700 px-3">
                   {row.submitter}
                 </TableCell>
-                <TableCell>
-                  <div className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-                    <span className="truncate max-w-[100px]">{row.url}</span>
+                <TableCell className="px-3">
+                  <div className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 cursor-pointer">
+                    <span className="truncate max-w-[120px]">{row.url}</span>
                     <ExternalLink className="h-3 w-3 flex-shrink-0" />
                   </div>
                 </TableCell>
-                <TableCell className="text-sm text-gray-600">
+                <TableCell className="text-sm text-gray-700 px-3">
                   {row.assigned}
                 </TableCell>
-                <TableCell>
+                <TableCell className="px-3">
                   <PriorityBadge priority={row.priority} />
                 </TableCell>
-                <TableCell className="text-sm text-gray-600">
+                <TableCell className="text-sm text-gray-700 px-3">
                   {row.dueDate}
                 </TableCell>
-                <TableCell className="text-sm font-medium">
+                <TableCell className="text-sm font-medium text-gray-900 px-3">
                   {row.estValue}
                 </TableCell>
               </TableRow>
