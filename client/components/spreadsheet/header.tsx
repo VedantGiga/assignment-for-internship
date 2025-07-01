@@ -6,16 +6,18 @@ export function Header() {
   return (
     <div className="border-b bg-white px-3 sm:px-6 py-3">
       <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-2 text-sm">
-          <span className="text-blue-600 hover:text-blue-800 cursor-pointer">
+        <div className="flex items-center gap-2 text-sm min-w-0">
+          <span className="text-blue-600 hover:text-blue-800 cursor-pointer hidden sm:inline">
             Workspaces
           </span>
-          <ChevronRight className="h-4 w-4 text-gray-400" />
-          <span className="text-blue-600 hover:text-blue-800 cursor-pointer">
+          <ChevronRight className="h-4 w-4 text-gray-400 hidden sm:inline" />
+          <span className="text-blue-600 hover:text-blue-800 cursor-pointer hidden md:inline">
             Folder 2
           </span>
-          <ChevronRight className="h-4 w-4 text-gray-400" />
-          <span className="font-medium text-gray-900">Spreadsheet 3</span>
+          <ChevronRight className="h-4 w-4 text-gray-400 hidden md:inline" />
+          <span className="font-medium text-gray-900 truncate">
+            Spreadsheet 3
+          </span>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-4">
