@@ -48,7 +48,7 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
   };
 
   return (
-    <div className="flex-1 overflow-auto">
+    <div className="flex-1 overflow-auto bg-white">
       <div className="min-w-[1200px]">
         <Table>
           <TableHeader>
