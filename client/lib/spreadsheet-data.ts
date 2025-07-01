@@ -25,6 +25,7 @@ export const mockData: SpreadsheetRow[] = [
   {
     id: "1",
     selected: false,
+    rowType: "financial-overview",
     description: "Launch social media campaign for product...",
     submitted: "19-10-2024",
     status: "complete",
@@ -38,8 +39,9 @@ export const mockData: SpreadsheetRow[] = [
   {
     id: "2",
     selected: false,
+    rowType: "job-request",
     description: "Update press kit for company rebrand",
-    submitted: "19-10-2024",
+    submitted: "28-10-2024",
     status: "need-to-start",
     submitter: "Irfan Khan",
     url: "www.irfankhandigital...",
@@ -51,6 +53,7 @@ export const mockData: SpreadsheetRow[] = [
   {
     id: "3",
     selected: false,
+    rowType: "job-request",
     description: "Finalize user testing feedback for app...",
     submitted: "05-12-2024",
     status: "in-progress",
@@ -64,6 +67,7 @@ export const mockData: SpreadsheetRow[] = [
   {
     id: "4",
     selected: false,
+    rowType: "job-request",
     description: "Design new features for the website",
     submitted: "10-01-2025",
     status: "complete",
@@ -77,6 +81,7 @@ export const mockData: SpreadsheetRow[] = [
   {
     id: "5",
     selected: false,
+    rowType: "job-request",
     description: "Prepare financial report for Q4",
     submitted: "25-01-2025",
     status: "blocked",
