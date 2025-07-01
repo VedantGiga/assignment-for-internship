@@ -167,6 +167,7 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
                 <TableCell className="text-sm font-medium text-gray-900 px-3">
                   {row.estValue}
                 </TableCell>
+                <TableCell className="px-3"></TableCell>
               </TableRow>
             ))}
 
