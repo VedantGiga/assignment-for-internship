@@ -108,6 +108,22 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --status-complete: 142 76% 36%;
+    --status-complete-foreground: 355 100% 100%;
+    --status-in-progress: 48 96% 53%;
+    --status-in-progress-foreground: 20 14.3% 4.1%;
+    --status-blocked: 0 84% 60%;
+    --status-blocked-foreground: 355 100% 100%;
+    --status-need-to-start: 221 83% 53%;
+    --status-need-to-start-foreground: 355 100% 100%;
+
+    --priority-high: 0 84% 60%;
+    --priority-high-foreground: 355 100% 100%;
+    --priority-medium: 48 96% 53%;
+    --priority-medium-foreground: 20 14.3% 4.1%;
+    --priority-low: 142 76% 36%;
+    --priority-low-foreground: 355 100% 100%;
   }
 }
 
