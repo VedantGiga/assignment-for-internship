@@ -39,13 +39,17 @@ export function Toolbar({
   onNewAction,
 }: ToolbarProps) {
   return (
-    <div className="flex items-center justify-between px-6 py-2 border-b bg-white">
-      <div className="flex items-center gap-1">
+    <div className="flex items-center justify-between px-4 py-1.5 border-b border-gray-200 bg-white min-h-[44px]">
+      <div className="flex items-center gap-0">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="sm" className="gap-1">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
+            >
               Tool bar
-              <ChevronDown className="h-4 w-4" />
+              <ChevronDown className="h-3.5 w-3.5" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="start">
@@ -72,9 +76,9 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onHideFields}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <EyeOff className="h-4 w-4" />
+          <EyeOff className="h-3.5 w-3.5" />
           Hide fields
         </Button>
 
@@ -82,9 +86,9 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onSort}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <ArrowUpDown className="h-4 w-4" />
+          <ArrowUpDown className="h-3.5 w-3.5" />
           Sort
         </Button>
 
@@ -92,9 +96,9 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onFilter}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <Filter className="h-4 w-4" />
+          <Filter className="h-3.5 w-3.5" />
           Filter
         </Button>
 
@@ -102,21 +106,21 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onCellView}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <Grid3X3 className="h-4 w-4" />
+          <Grid3X3 className="h-3.5 w-3.5" />
           Cell view
         </Button>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-0">
         <Button
           variant="ghost"
           size="sm"
           onClick={onImport}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <Upload className="h-4 w-4" />
+          <Upload className="h-3.5 w-3.5" />
           Import
         </Button>
 
@@ -124,9 +128,9 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onExport}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <Download className="h-4 w-4" />
+          <Download className="h-3.5 w-3.5" />
           Export
         </Button>
 
@@ -134,9 +138,9 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onShare}
-          className="gap-1 h-8 px-3 text-sm"
+          className="gap-1 h-8 px-2 text-sm text-gray-700 hover:bg-gray-100 font-normal"
         >
-          <Share className="h-4 w-4" />
+          <Share className="h-3.5 w-3.5" />
           Share
         </Button>
 
@@ -144,9 +148,9 @@ export function Toolbar({
           variant="default"
           size="sm"
           onClick={onNewAction}
-          className="gap-1 bg-green-600 hover:bg-green-700 h-8 px-3 text-sm"
+          className="gap-1 bg-green-600 hover:bg-green-700 h-8 px-2 text-sm text-white font-normal ml-1"
         >
-          <Plus className="h-4 w-4" />
+          <Plus className="h-3.5 w-3.5" />
           New Action
         </Button>
       </div>
