@@ -39,7 +39,7 @@ export function Toolbar({
   onNewAction,
 }: ToolbarProps) {
   return (
-    <div className="flex items-center justify-between px-6 py-3 border-b bg-white">
+    <div className="flex items-center justify-between px-3 sm:px-6 py-3 border-b bg-white overflow-x-auto">
       <div className="flex items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
