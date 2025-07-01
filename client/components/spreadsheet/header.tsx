@@ -35,7 +35,9 @@ export function Header() {
             <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
               <User className="h-4 w-4 text-white" />
             </div>
-            <span className="text-sm font-medium">John Doe</span>
+            <span className="text-sm font-medium hidden sm:inline">
+              John Doe
+            </span>
           </div>
         </div>
       </div>
