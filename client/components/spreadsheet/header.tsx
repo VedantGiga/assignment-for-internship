@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 export function Header() {
   return (
-    <div className="border-b bg-white px-3 sm:px-6 py-3">
+    <div className="border-b border-gray-200 bg-white px-6 py-3">
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-sm min-w-0">
           <span className="text-blue-600 hover:text-blue-800 cursor-pointer hidden sm:inline">
