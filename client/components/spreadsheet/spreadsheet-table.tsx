@@ -11,7 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { StatusBadge } from "@/components/ui/status-badge";
 import { PriorityBadge } from "@/components/ui/priority-badge";
 import { Button } from "@/components/ui/button";
-import { MoreHorizontal, ExternalLink } from "lucide-react";
+import { MoreHorizontal, ExternalLink, Plus } from "lucide-react";
 import type { SpreadsheetRow } from "@/lib/spreadsheet-data";
 
 interface SpreadsheetTableProps {
