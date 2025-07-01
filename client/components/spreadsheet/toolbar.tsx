@@ -40,7 +40,7 @@ export function Toolbar({
 }: ToolbarProps) {
   return (
     <div className="flex items-center justify-between px-3 sm:px-6 py-3 border-b bg-white overflow-x-auto">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" size="sm" className="gap-1">
