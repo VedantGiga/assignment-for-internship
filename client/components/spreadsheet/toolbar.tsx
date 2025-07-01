@@ -109,18 +109,33 @@ export function Toolbar({
         </Button>
       </div>
 
-      <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-        <Button variant="ghost" size="sm" onClick={onImport} className="gap-1">
+      <div className="flex items-center gap-2">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onImport}
+          className="gap-1 h-8 px-3 text-sm"
+        >
           <Upload className="h-4 w-4" />
           Import
         </Button>
 
-        <Button variant="ghost" size="sm" onClick={onExport} className="gap-1">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onExport}
+          className="gap-1 h-8 px-3 text-sm"
+        >
           <Download className="h-4 w-4" />
           Export
         </Button>
 
-        <Button variant="ghost" size="sm" onClick={onShare} className="gap-1">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onShare}
+          className="gap-1 h-8 px-3 text-sm"
+        >
           <Share className="h-4 w-4" />
           Share
         </Button>
@@ -129,7 +144,7 @@ export function Toolbar({
           variant="default"
           size="sm"
           onClick={onNewAction}
-          className="gap-1 bg-green-600 hover:bg-green-700"
+          className="gap-1 bg-green-600 hover:bg-green-700 h-8 px-3 text-sm"
         >
           <Plus className="h-4 w-4" />
           New Action
