@@ -177,26 +177,22 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
             {Array.from({ length: 20 }, (_, i) => (
               <TableRow
                 key={`empty-${i}`}
-                className="hover:bg-gray-50 border-b border-gray-100 h-12"
+                className="hover:bg-gray-50 border-b border-gray-100 h-11"
               >
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="text-center px-3">
-                  <div className="w-6 h-6 bg-gray-50 rounded text-xs text-gray-400 flex items-center justify-center">
-                    {data.length + i + 1}
-                  </div>
-                </TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-1"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
-                <TableCell className="px-3"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-1 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
+                <TableCell className="px-2 py-1"></TableCell>
               </TableRow>
             ))}
           </TableBody>
