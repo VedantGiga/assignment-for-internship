@@ -50,7 +50,7 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
   return (
     <div className="flex-1 overflow-auto bg-white">
       <div className="min-w-[1200px]">
-        <Table>
+        <Table className="spreadsheet-table">
           <TableHeader>
             <TableRow className="hover:bg-transparent border-b border-gray-200 bg-gray-50">
               <TableHead className="w-12 h-10">
