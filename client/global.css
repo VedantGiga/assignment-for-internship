@@ -136,3 +136,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .spreadsheet-table {
+    @apply border-collapse;
+  }
+
+  .spreadsheet-table th,
+  .spreadsheet-table td {
+    @apply border-r border-gray-200 last:border-r-0;
+  }
+}
