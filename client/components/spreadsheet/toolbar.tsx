@@ -72,18 +72,28 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onHideFields}
-          className="gap-1"
+          className="gap-1 h-8 px-3 text-sm"
         >
           <EyeOff className="h-4 w-4" />
           Hide fields
         </Button>
 
-        <Button variant="ghost" size="sm" onClick={onSort} className="gap-1">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onSort}
+          className="gap-1 h-8 px-3 text-sm"
+        >
           <ArrowUpDown className="h-4 w-4" />
           Sort
         </Button>
 
-        <Button variant="ghost" size="sm" onClick={onFilter} className="gap-1">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onFilter}
+          className="gap-1 h-8 px-3 text-sm"
+        >
           <Filter className="h-4 w-4" />
           Filter
         </Button>
@@ -92,7 +102,7 @@ export function Toolbar({
           variant="ghost"
           size="sm"
           onClick={onCellView}
-          className="gap-1"
+          className="gap-1 h-8 px-3 text-sm"
         >
           <Grid3X3 className="h-4 w-4" />
           Cell view
