@@ -49,7 +49,8 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
 
   return (
     <div className="flex-1 overflow-auto">
-      <Table>
+      <div className="min-w-[1200px]">
+        <Table>
         <TableHeader>
           <TableRow className="hover:bg-transparent border-b-2">
             <TableHead className="w-12">
