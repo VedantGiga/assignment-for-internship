@@ -20,12 +20,12 @@ export function Header() {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 sm:gap-4">
-          <div className="relative hidden sm:block">
+        <div className="flex items-center gap-4">
+          <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
             <Input
               placeholder="Search within sheet"
-              className="pl-10 w-48 lg:w-64 h-8 text-sm"
+              className="pl-10 w-64 h-8 text-sm border-gray-200"
             />
           </div>
           <Button variant="ghost" size="icon" className="h-8 w-8">
@@ -35,9 +35,7 @@ export function Header() {
             <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
               <User className="h-4 w-4 text-white" />
             </div>
-            <span className="text-sm font-medium hidden sm:inline">
-              John Doe
-            </span>
+            <span className="text-sm font-medium">John Doe</span>
           </div>
         </div>
       </div>
