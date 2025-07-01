@@ -194,6 +194,7 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
                 <TableCell className="px-3"></TableCell>
                 <TableCell className="px-3"></TableCell>
                 <TableCell className="px-3"></TableCell>
+                <TableCell className="px-3"></TableCell>
               </TableRow>
             ))}
           </TableBody>
