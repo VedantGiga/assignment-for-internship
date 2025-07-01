@@ -52,46 +52,52 @@ export function SpreadsheetTable({ data, onRowUpdate }: SpreadsheetTableProps) {
       <div className="min-w-[1200px]">
         <Table>
           <TableHeader>
-            <TableRow className="hover:bg-transparent border-b-2">
-              <TableHead className="w-12">
+            <TableRow className="hover:bg-transparent border-b border-gray-200 bg-gray-50">
+              <TableHead className="w-12 h-10">
                 <Checkbox
                   checked={data.length > 0 && selectedRows.size === data.length}
                   onCheckedChange={handleSelectAll}
                   aria-label="Select all"
                 />
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-                ABC
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+                <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-center font-medium">
+                  ABC
+                </div>
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide min-w-[200px]">
-                Answer a question
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+                <div className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-center font-medium">
+                  Answer a question
+                </div>
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-                Extract
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
+                <div className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-center font-medium">
+                  Extract
+                </div>
               </TableHead>
-              <TableHead className="w-12"></TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="w-8"></TableHead>
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Submitted
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Status
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Submitter
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 URL
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Assigned
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Priority
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Due Date
               </TableHead>
-              <TableHead className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              <TableHead className="text-xs font-medium text-gray-600 h-10 px-3">
                 Est. Value
               </TableHead>
             </TableRow>
